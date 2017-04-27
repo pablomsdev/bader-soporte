@@ -205,7 +205,7 @@ h1 {
 
 .fondomodelos {
     padding: 30px 0 20px;
-    color: #f8f8f8; /*color texto*/
+    color: #333333; /*color texto*/
     background: url(../img/fondomodelos.png) no-repeat center center;
     background-size: cover;
 }
