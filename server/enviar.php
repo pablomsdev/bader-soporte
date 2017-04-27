@@ -21,7 +21,7 @@ if (is_writable($nombre_archivo)) {
 	$nombr="BADER";
 	echo "<a href='".$href."'>".$nombr."</a>";
 	sleep(3);
-	header('Location: http://217.160.128.108/facturas-expodental/gracias.html');
+	header('Location: ../gracias.html');
     fclose($gestor);
 } else {
     echo "Error 1 - No se puede escribir sobre el archivo para guardar su texto. Por favor, si el problema persiste contacte con el administrador.</p>";
