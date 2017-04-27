@@ -3,7 +3,7 @@
 
 //Definición de variables
 $nombre_archivo = 'texto.txt';
-$contenido = "\r\nNum. Albaran:" . $_POST["first_name"] ."\r\nApellidos:" . $_POST["last_name"] ."\r\n\r\n\r\n";
+$contenido = "\r\nNombre:" . $_POST["first_name"] ."\r\nApellidos:" . $_POST["last_name"] ."\r\n\r\n\r\n";
 
 //Se comprueba si el fichero se puede escribir
 if (is_writable($nombre_archivo)) {
