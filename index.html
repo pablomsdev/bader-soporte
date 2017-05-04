@@ -60,6 +60,12 @@
     });
     </script>
 
+    <link href="dist/css/datepicker.min.css" rel="stylesheet" type="text/css">
+    <script src="dist/js/datepicker.min.js"></script>
+
+    <!-- Include Spanish language -->
+    <script src="dist/js/i18n/datepicker.es.js"></script>
+
 </head>
 
 <body>
@@ -211,6 +217,22 @@
                      <label class="col-md-4 control-label">Fecha de compra</label>
                      <div class="col-md-4 inputGroupContainer">
                        <div class="input-group">
+                         <div class='input-group date'>
+                           <span class="input-group-addon">
+                               <span class="glyphicon glyphicon-calendar"></span>
+                           </span>
+                           <input name="fechacompra" type='text' class="form-control datepicker-here" data-language='es' />
+                           <!--<input name="fechacompra" type='text' class="form-control" />-->
+                        </div>
+                     </div>
+                   </div>
+
+                </div>
+
+                   <!--<div class="form-group">
+                     <label class="col-md-4 control-label">Fecha de compra</label>
+                     <div class="col-md-4 inputGroupContainer">
+                       <div class="input-group">
                          <div class='input-group date' id='datetimepicker1'>
                            <span class="input-group-addon">
                                <span class="glyphicon glyphicon-calendar"></span>
@@ -225,7 +247,7 @@
                         });
                     </script>
 
-                </div>
+                </div>-->
 
                    <div class="form-group">
                      <label class="col-md-4 control-label">Descripción del problema (*)</label>
