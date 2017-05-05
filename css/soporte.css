@@ -367,6 +367,63 @@ video#videosillones{ display:none; }
 }
 
 
+/* Validaciones */
+input:invalid {
+  border: 1px solid red;
+}
+
+
+input:valid {
+  border: 1px solid green;
+}
+
+textarea:invalid {
+  border: 1px solid red;
+}
+
+
+textarea:valid {
+  border: 1px solid green;
+}
+
+
+input:required:invalid {
+
+border: 1px solid red;
+
+}
+
+input:required:valid {
+
+border: 1px solid green;
+
+}
+
+textarea:required:invalid {
+
+border: 1px solid red;
+
+}
+
+textarea:required:valid {
+
+border: 1px solid green;
+
+}
+
+
+.check-ok {
+  color: lime;
+}
+
+input:invalid ~ .check-ok {
+  display: none;
+}
+
+input:valid ~ .check-ok {
+  display: inline;
+}
+/*Fin validaciones*/
 
 /*.img-responsive {
   border: black 1px solid;
