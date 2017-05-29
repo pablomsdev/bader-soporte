@@ -9,14 +9,14 @@ $contenido = "\r\nNombre:" . $_POST["first_name"] ."\r\nApellidos:" . $_POST["la
   $_POST["fechacompra"] ."\r\nComentarios:" . $_POST["comment"] ."\r\n\r\n\r\n";
 
 if(isset($_POST['submit'])){
-    $to = "pabloinf@gmail.com"; // this is your Email address
+    $to = "pablo@bader.es"; // this is your Email address
     $from = $_POST['email']; // this is the sender's Email address
     $first_name = $_POST['first_name'];
     $last_name = $_POST['last_name'];
     $subject = "BADER · Formulario de Soporte";
     $subject2 = "BADER · Copia de tu solicitud de soporte";
     $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $contenido;
-    $message2 = "Esta es una copia de tu mensaje " . $first_name . "\n\n" . $contenido . "\n\nContactaremos con usted en la mayor brevedad";
+    $message2 = "Esta es una copia de tu mensaje " . $first_name . "\n\n" . $contenido . "\n\nSu incidencia ha sido registrada. \nContactaremos con usted en la mayor brevedad.";
 
     $headers = "From:" . $from;
     $headers2 = "From:" . $to;
@@ -30,9 +30,9 @@ if(isset($_POST['submit'])){
 //Creamos un log de toda la gente que cubre el formulario
 
 //Se comprueba si el fichero se puede escribir
-if (is_writable($nombre_archivo)) {
+//if (is_writable($nombre_archivo)) {
 	//Comprobaciones de error
-    if (!$gestor = fopen($nombre_archivo, 'a')) {
+    /*if (!$gestor = fopen($nombre_archivo, 'a')) {
          echo "Error 2 - No se puede abrir el archivo para guardar su texto. Por favor, si el problema persiste contacte con el administrador.</p>";
          exit;
     }
@@ -49,4 +49,4 @@ if (is_writable($nombre_archivo)) {
     fclose($gestor);
 } else {
     echo "Error 1 - No se puede escribir sobre el archivo para guardar su texto. Por favor, si el problema persiste contacte con el administrador.</p>";
-}
+}*/

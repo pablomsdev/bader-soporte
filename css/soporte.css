@@ -223,6 +223,13 @@ h1 {
     font-size: 3em;
 }
 
+#tituloform {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 3em;
+    color: white;
+}
+
 @media(max-width:1199px) {
     ul.banner-social-buttons {
         float: left;
@@ -250,7 +257,8 @@ h1 {
 
 footer {
     padding: 50px 0;
-    background-color: #f8f8f8;
+    /*background-color: #f8f8f8;*/
+    background-color: #bdbe00;
 }
 
 p.copyright {
@@ -387,6 +395,7 @@ textarea:valid {
 }
 
 
+
 input:required:invalid {
 
 border: 1px solid red;
@@ -412,6 +421,7 @@ border: 1px solid green;
 }
 
 
+
 .check-ok {
   color: lime;
 }
@@ -423,6 +433,15 @@ input:invalid ~ .check-ok {
 input:valid ~ .check-ok {
   display: inline;
 }
+
+textarea:invalid ~ .check-ok {
+  display: none;
+}
+
+textarea:valid ~ .check-ok {
+  display: inline;
+}
+
 /*Fin validaciones*/
 
 /*.img-responsive {
